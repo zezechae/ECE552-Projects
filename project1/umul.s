@@ -19,16 +19,22 @@
     .text
     .globl umul
 umul:
-    addi x5, x0, 0
-    addi x6, x0, 32
+    addi x5, x0, 0  ## i
+    addi x6, x0, 32 ## maximum iteration
+    addi x7, x0, 0  ## sum
 
 loop:
     bge x5, x6, end
-    andi x7, a1, 1
+    andi x28, a1, 1
+    beq x28, 1, skip
+    add x7, x7, a0
+
+skip:
+    slli a0, a0, 1
     srli a1, a1, 1
-    bne x7, 1, loop
-    sll a0, a0, x5+1
-    add a0, a0, a0
     addi x5, x5, 1
+    jal x0, loop
 
 end:
+    addi a0, x7, 0
+    jalr x0, 0(ra)
