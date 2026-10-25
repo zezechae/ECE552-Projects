@@ -1,4 +1,4 @@
-## Author: Your Name
+## Author: Jewoo Chae
 ##
 ## You may implement the following with any of the instructions in the RV32I instruction set
 ## and described in the reference sheet. Do not use any of the mul[h][s][u] instructions which
@@ -19,7 +19,16 @@
     .text
     .globl umul
 umul:
-    # This dummy code adds the two operands and returns the result.
-    # Replace with your implementation.
-    add  a0, a0, a1
-    jalr zero, 0(ra)
+    addi x5, x0, 0
+    addi x6, x0, 32
+
+loop:
+    bge x5, x6, end
+    andi x7, a1, 1
+    srli a1, a1, 1
+    bne x7, 1, loop
+    sll a0, a0, x5+1
+    add a0, a0, a0
+    addi x5, x5, 1
+
+end:
