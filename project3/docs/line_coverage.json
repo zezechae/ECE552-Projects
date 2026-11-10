@@ -1,0 +1,62 @@
+[
+  {
+    "file": "rtl/alu.v",
+    "lines": 169,
+    "explained_rows": 169,
+    "sha256": "526ea920e8970a4ca2d4f313c10295d2f46810bf5f0d632065cd6b20bdcc2a85"
+  },
+  {
+    "file": "rtl/alu_control.v",
+    "lines": 33,
+    "explained_rows": 33,
+    "sha256": "77368f54ae93b4a5bf8a00ddbbcdaa313b395f0ffa5ed0ac45c1f812fb181853"
+  },
+  {
+    "file": "rtl/control_unit.v",
+    "lines": 77,
+    "explained_rows": 77,
+    "sha256": "2813576b7fd304df6637aa84961455039927dab7a295b9b2e895a3cd781cf09c"
+  },
+  {
+    "file": "rtl/dmem_mask_gen.v",
+    "lines": 47,
+    "explained_rows": 47,
+    "sha256": "4247ef4d86d2cf9e70ff6c51cffb1adedfc6dfa2801a47d6475b783d705ccfcd"
+  },
+  {
+    "file": "rtl/fetch.v",
+    "lines": 42,
+    "explained_rows": 42,
+    "sha256": "e44504410989796b80d40177fbe42921a41599d75f00762a5d178a5f6dfc5f9f"
+  },
+  {
+    "file": "rtl/hart.v",
+    "lines": 229,
+    "explained_rows": 229,
+    "sha256": "1eec10abf1465442198a9d7d0a102a92bdb9fc36a66d0863d3736e5714368b92"
+  },
+  {
+    "file": "rtl/imm.v",
+    "lines": 50,
+    "explained_rows": 50,
+    "sha256": "7c6dbed2e4aeab427eaa8292d7abf25fa2650e7226a14a53e66ac8508292b387"
+  },
+  {
+    "file": "rtl/load_format.v",
+    "lines": 37,
+    "explained_rows": 37,
+    "sha256": "05171448a378699b160a0bdfbe0006ba819c4bef24fc86b1cb533967477a6e6c"
+  },
+  {
+    "file": "rtl/rf.v",
+    "lines": 93,
+    "explained_rows": 93,
+    "sha256": "62e821f3a691a20c816ee96299848876f669cb627a5321b2aa3709881855267c"
+  },
+  {
+    "file": "rtl/store_align.v",
+    "lines": 28,
+    "explained_rows": 28,
+    "sha256": "602e0c44569b85a4e0e4f874563b0bba17777264c5ce457b8ebc1dd1150a746b"
+  }
+]
